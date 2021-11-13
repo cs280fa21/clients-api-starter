@@ -62,7 +62,7 @@ class ClientDao {
         (client) => note.name === query || client.email === query
       );
     }
-    return this.notes;
+    return this.clients;
   }
 }
 
