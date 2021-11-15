@@ -59,7 +59,7 @@ class ClientDao {
   async readAll(query = "") {
     if (query !== "") {
       return this.clients.filter(
-        (client) => note.name === query || client.email === query
+        (client) => client.name === query || client.email === query
       );
     }
     return this.clients;
